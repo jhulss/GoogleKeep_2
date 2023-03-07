@@ -6,8 +6,8 @@ const descripcion = document.querySelector("#descripcion");
 const form = document.querySelector("#nota-form");
 const div_notas = document.querySelector(".div_notas");
 
-const div_busqueda = document.querySelector("#resultado_busqueda_div");
 const form_busqueda = document.querySelector("#buscador-form");
+const div_busqueda = document.querySelector(".div_busquedas");
 const buscar = document.querySelector("#buscar");
 
 const titulo_obligatorio = document.querySelector("#h3_titulo");
@@ -39,7 +39,12 @@ div_notas.addEventListener("click", (e)=>{
 
 });
 
-// form_busqueda.addEventListener("submit", (event) => {
-//   event.preventDefault();
-//   div_busqueda.innerHTML = "<p>" + LN.get(buscar.value) + "</p>";
-// });
+form_busqueda.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const buscarNota = notas.filter((item) => item.titulo === buscar.value);
+  notas_encontradas = buscarNota;
+
+  form_busqueda.reset();
+  mostrar_lista_notas(notas_encontradas,div_busqueda);
+  // div_busqueda.innerHTML = `<p>${buscar.value}</p>`;
+});
