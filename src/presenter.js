@@ -7,16 +7,27 @@ const div = document.querySelector("#resultado_nota_div");
 const ul = document.querySelector('ul');
 const div_busqueda = document.querySelector("#resultado_busqueda_div");
 const form_busqueda = document.querySelector("#buscador-form");
-const buscar = document.querySelector("#buscar")
+const buscar = document.querySelector("#buscar");
 
-let LN = new Map();
+const titulo_obligatorio = document.querySelector("#h3_titulo");
+
+let nota = [];
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  LN.set(titulo, descripcion);
-
+  
   const li = document.createElement("li");
   const p = document.createElement("p");
+
+  if (!titulo.value.trim()){
+    titulo_obligatorio.textContent = 'Titulo Obligatorio';
+
+    setTimeout(() =>{
+      titulo_obligatorio.textContent = '';
+    }, 2000) 
+    return;
+  }
+
   p.innerHTML = "<p>" + "<strong>" + titulo.value + "</strong>" + "<br>"+ descripcion.value +"</p>";
   
   li.appendChild(p);

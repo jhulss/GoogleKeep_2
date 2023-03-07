@@ -1,34 +1,38 @@
 <html>
   <body>
-    <h1>Buscador:</h1>
+    <h2>Buscador:</h2>
     <form id="buscador-form">
       <label for="buscar">Buscar nota:</label>
       <input type="text" id="buscar"/>
       <input type="submit" value="Buscar" id="buscador-button" />
       <br>
     </form> 
-    <h1>Notas:</h1>
+
     <form id="nota-form">
-      <label for="titulo">Titulo:</label>
-      <input type="text" id="titulo" />
-      <br>
-      <label for="descripcion">Descripcion:</label>
-      <input type="text" id="descripcion" />
-      <input type="submit" value="Crear" id="crear-button" />
+      <h2>Notas:</h2>
+      <h3 id="h3_titulo"></h3>
+      <table>
+        <tr>
+          <td><label for="titulo">Titulo:</label>
+            </td>
+          <td><input type="text" id="titulo"/></td>
+        </tr>
+        <tr>
+          <td><label for="descripcion">Descripcion:</label></td>
+          <td><input type="text" id="descripcion" /></td>
+        </tr>
+      </table>
+      <input type="submit" value="Crear nota" id="crear-button" />
     </form>
-    
-    <!-- <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" id="sumar-button" />
-    </form> -->
+
+    <!-- Lista de Notas -->
     <div id="resultado_nota_div">
       <ul>
         
       </ul>
     </div>
+
+    <!-- Lista de busqueda -->
     <div id="resultado_busqueda_div">
       <!-- <ul>
 
