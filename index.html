@@ -1,44 +1,54 @@
-<html>
-  <body>
-    <h2>Buscador:</h2>
-    <form id="buscador-form">
-      <label for="buscar">Buscar nota:</label>
-      <input type="text" id="buscar"/>
-      <input type="submit" value="Buscar" id="buscador-button" />
-      <br>
-    </form> 
+<!DOCTYPE html>
+<html lang="es">
 
-    <form id="nota-form">
-      <h2>Notas:</h2>
-      <h3 id="h3_titulo"></h3>
-      <table>
-        <tr>
-          <td><label for="titulo">Titulo:</label>
-            </td>
-          <td><input type="text" id="titulo"/></td>
-        </tr>
-        <tr>
-          <td><label for="descripcion">Descripcion:</label></td>
-          <td><input type="text" id="descripcion" /></td>
-        </tr>
-      </table>
-      <input type="submit" value="Crear nota" id="crear-button" />
-    </form>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keep</title>
+</head>
 
-    <!-- Lista de Notas -->
-    <div id="resultado_nota_div">
-      <ul>
-        
-      </ul>
+<body>
+  <h2>Buscador:</h2>
+  <form id="buscador-form">
+    <label for="buscar">Buscar nota:</label>
+    <input type="text" id="buscar" />
+    <input type="submit" value="Buscar" id="buscador-button" />
+    <br>
+  </form>
+
+  <form id="nota-form">
+    <h2>Notas:</h2>
+    <h3 id="h3_titulo"></h3>
+    <table>
+      <tr>
+        <td><label for="titulo">Titulo:</label>
+        </td>
+        <td><input type="text" id="titulo" /></td>
+      </tr>
+      <tr>
+        <td><label for="descripcion">Descripcion:</label></td>
+        <td><input type="text" id="descripcion" /></td>
+      </tr>
+    </table>
+    <input type="submit" value="Crear nota" id="crear-button" />
+  </form>
+  <hr>
+  <!-- Lista de Notas -->
+  <div class="div_notas">
+    <div class="item-nota">
+      <p>Lista de notas vacia</p>
     </div>
+  </div>
 
-    <!-- Lista de busqueda -->
-    <div id="resultado_busqueda_div">
-      <!-- <ul>
+  <!-- Lista de busqueda -->
+  <div id="resultado_busqueda_div">
+    <!-- <ul>
 
       </ul> -->
-    </div>
+  </div>
 
-    <script type="module" src="./src/presenter.js"></script>
-  </body>
+  <script type="module" src="./src/presenter.js"></script>
+</body>
+
 </html>
