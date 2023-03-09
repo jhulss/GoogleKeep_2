@@ -10,7 +10,8 @@ function mostrar_lista_notas(notas, div_notas) {
             itemNota.innerHTML = `
             <table>
                 <tr>
-                    <td><strong>${item.titulo}:</strong><br>${item.descripcion}</td>
+                    <td><strong>${item.titulo}:</strong><br></td>
+                    <td>${item.descripcion}</td>
                     <td>
                     <div class="botones">
                         <button class="eliminar" data-id="${item.id}">Eliminar</button>

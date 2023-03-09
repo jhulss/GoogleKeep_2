@@ -5,13 +5,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 .buscarNota{
     text-align: left;
+    
 }
 
 body {
-    background-color: #232323 ;
-    text-align: center;
+    background-color: #839192  ;
+    
 }
 
 .listaNotas{
@@ -20,5 +22,23 @@ body {
 }
 
 .listaBusqueda{
+    text-align: center;
     color: white;
+}
+.eliminar{
+    text-align: right;
+}
+
+#nota-form{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.descripcionNota{
+    width: 40%;
+    height: 30;
+    display: flex;
 }
