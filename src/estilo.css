@@ -5,8 +5,20 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.buscarNota{
+    text-align: left;
+}
 
 body {
     background-color: #232323 ;
     text-align: center;
+}
+
+.listaNotas{
+    text-align: center;
+    color: white;
+}
+
+.listaBusqueda{
+    color: white;
 }

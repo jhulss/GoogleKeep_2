@@ -10,33 +10,31 @@
 </head>
 
 <body>
-  <h2>Buscador:</h2>
+<div class="buscarNota">
   <form id="buscador-form">
     <label for="buscar">Buscar nota:</label>
     <input type="text" id="buscar" />
     <input type="submit" value="Buscar" id="buscador-button" />
     <br>
+    <br>
   </form>
-
+</div>
   <form id="nota-form">
-    <h2>Notas:</h2>
+    <!-- <h2>Notas:</h2> -->
     <h3 id="h3_titulo"></h3>
-    <table>
-      <tr>
-        <td><label for="titulo">Titulo:</label>
-        </td>
-        <td><input type="text" id="titulo" /></td>
-      </tr>
-      <tr>
-        <td><label for="descripcion">Descripcion:</label></td>
-        <td><input type="text" id="descripcion" /></td>
-      </tr>
-    </table>
+    
+        <label for="titulo">Titulo:</label>
+       
+        <input type="text" id="titulo" /></td>
+        <br>
+        <label for="descripcion">Descripcion:</label>
+        <input type="text" id="descripcion" />
+     
     <input type="submit" value="Crear nota" id="crear-button" />
   </form>
-
+ <br>
   <!-- Lista de Notas -->
-  <h2>Lista de Notas</h2>
+  <h2 class="listaNotas">Lista de Notas</h2>
   <hr>
   <div class="div_notas">
     <div class="item-nota">
@@ -46,9 +44,9 @@
       </div> -->
     </div>
   </div>
-
+<br>
   <!-- Lista de busqueda -->
-  <h2>Lista de busqueda</h2>
+  <h2 class="listaBusqueda">Lista de busqueda</h2>
   <hr>
   <div class="div_busquedas">
     <p>Vacio</p>
